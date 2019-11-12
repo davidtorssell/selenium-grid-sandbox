@@ -15,8 +15,9 @@ services:
     ports:
       - 4444:4444
     command: >
-      start --desiredContainers 8
-            --maxDockerSeleniumContainers 8
+      start --desiredContainers 4
+            --seleniumImageName selenium_cert
+            --maxDockerSeleniumContainers 4
             --screenWidth 800 --screenHeight 600
             --timeZone "Europe/Berlin"
             --videoRecordingEnabled true
